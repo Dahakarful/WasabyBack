@@ -1,0 +1,5 @@
+back/projectWasaby/.idea/*
+back/projectWasaby/wasaby/__pycache__/
+back/projectWasaby/db.sqlite3
+back/projectWasaby/projectWasaby/__pycache__/
+back/projectWasaby/wasaby/migrations/__pycache__/

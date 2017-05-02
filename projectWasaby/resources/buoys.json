@@ -1,0 +1,42 @@
+{
+	"WMO41002": {
+		"id": "WMO41002",
+        "longitude": "-74.83",
+        "latitude": "31.86"
+    },
+    "WMO41004": {
+		"id": "WMO41004",
+        "longitude": "-79.10",
+        "latitude": "32.50"
+    },
+    "WMO41008": {
+		"id": "WMO41008",
+        "longitude": "-80.87",
+        "latitude": "31.40"
+    },
+    "WMO41013": {
+		"id": "WMO41013",
+        "longitude": "-77.74",
+        "latitude": "33.44"
+    },
+	"WMO41025": {
+		"id": "WMO41025",
+        "longitude": "-75.40",
+        "latitude": "35.01"
+    },
+    "WMO41040": {
+		"id": "WMO41040",
+        "longitude": "-53.02",
+        "latitude": "14.52"
+    },
+    "WMO41041": {
+		"id": "WMO41041",
+        "longitude": "-46.08",
+        "latitude": "14.33"
+    },
+    "WMO41043": {
+		"id": "WMO41043",
+        "longitude": "-64.85",
+        "latitude": "21.02"
+    }
+}
