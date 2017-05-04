@@ -1,5 +1,8 @@
 {
-  "deploy": {
-    "module": "projectWasaby:manage"
-  }
+    "build": {
+        "folder": "projectWasaby"
+    },
+    "deploy": {
+        "module": "manage:projectWasaby"
+	}
 }
