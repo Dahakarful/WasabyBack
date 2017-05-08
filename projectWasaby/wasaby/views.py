@@ -4,13 +4,12 @@ import elasticsearch
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 
-url = 'https://search-elasticwasaby-y2o2s4be7d3uiwq3tr6jrkfr7i.eu-west-2.es.amazonaws.com/index/buoys'
-indexName = 'index'
+url = 'https://search-elasticwasaby-y2o2s4be7d3uiwq3tr6jrkfr7i.eu-west-2.es.amazonaws.com/'
+indexName = 'wasaby'
 typeName = 'buoys'
-jsonPath = '../resources/buoys.json'
+jsonPath = '../resources/result.json'
 
 es = elasticsearch.Elasticsearch()
-
 
 def indexBuoys(request):
     print(request)

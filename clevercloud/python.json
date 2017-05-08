@@ -3,6 +3,6 @@
         "folder": "projectWasaby"
     },
     "deploy": {
-        "module": "manage:projectWasaby"
+        "module": "wsgi:projectWasaby"
 	}
 }
