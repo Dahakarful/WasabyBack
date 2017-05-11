@@ -25,7 +25,7 @@ SECRET_KEY = '!=d&)e9lnm%5mnxj*15p@bf=_1eeeexpxr85-(b&4)7rkkyf5i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['62.210.112.171', '62.210.92.244', 'http://wasabyback.cleverapps.io/']
+ALLOWED_HOSTS = ['62.210.112.171', '62.210.92.244', 'http://wasabyback.cleverapps.io/', 'http://app-7c88a9a8-f749-460f-942c-bf951b15454e.cleverapps.io/']
 
 
 # Application definition
