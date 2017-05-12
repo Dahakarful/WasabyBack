@@ -1,3 +1,4 @@
 django >=1.9,<1.10
 elasticsearch==5.1.0
 requests_aws4auth
+corsheaders
