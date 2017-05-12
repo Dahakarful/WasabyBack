@@ -54,7 +54,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'projectWasaby.urls'
+
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = (
+    'wasaby-front.cleverapps.io/'
+)
 
 TEMPLATES = [
     {
