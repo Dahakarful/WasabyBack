@@ -20,5 +20,6 @@ from wasaby import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/', views.indexBuoys),
-    url(r'^search/', views.searchABuoy),
+    url(r'^search/', views.searchAll),
+    url(r'^searchabuoy/', views.searchABuoy),
 ]

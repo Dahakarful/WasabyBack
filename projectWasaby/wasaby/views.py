@@ -29,9 +29,18 @@ def indexBuoys(request):
         print(res)
     return HttpResponse("Number of created objects %d" % len(nodes))
 
-def searchABuoy(request):
+def searchAll(request):
     print(request)
     res = es.search(index=indexName, filter_path=['hits.hits._source.*'], body={"query": {"match_all": {}}})
+    print(res)
+    jsonObj = json.dumps(res)
+    return JsonResponse(jsonObj, safe=False)
+
+def searchABuoy(request):
+    print(request)
+    id = request.GET.get('id')
+    print(id)
+    res = es.search(index=indexName, filter_path=['hits.hits._source.*'], body={"query":{"match":{"id": id}}})
     print(res)
     jsonObj = json.dumps(res)
     return JsonResponse(jsonObj, safe=False)

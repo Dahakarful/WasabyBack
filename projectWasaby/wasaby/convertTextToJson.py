@@ -4,11 +4,10 @@ import os
 
 #convert txt to csv
 filein = open('../resources/ndbc_listing.txt','r')
-os.remove('../resources/temp.txt')
 fileout = open('../resources/temp.txt','w')
 
 for line in filein:
-    a = line.replace('Lat','')
+    a = line.replace('Lat','').replace('.nc', '').replace('_spectrum', '')
     b = a.replace('Lon','')
     c= b.replace('/',',')
     d = c.replace('_',',')
@@ -26,10 +25,9 @@ fileout.close()
 
 #convert csv to json
 csvfile = open('../resources/temp.txt','r')
-os.remove('../resources/result.json')
-jsonfile = open('../resources/result.json','w')
+jsonfile = open('../resources/res.json','w')
 
-fieldnames=['type','year','month','id','start','end','lat','lon','extension']
+fieldnames=['type','year','month','id','start','end','lat','lon']
 
 reader = csv.DictReader(csvfile,fieldnames)
 json.dump([row for row in reader],jsonfile)
