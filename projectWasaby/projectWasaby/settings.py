@@ -56,9 +56,6 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'projectWasaby.urls'
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = (
-    'http://wasaby-front.cleverapps.io/'
-)
 CORS_ALLOW_METHODS = (
     'DELETE',
     'GET',
